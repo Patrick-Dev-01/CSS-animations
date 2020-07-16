@@ -4,3 +4,4 @@
 
 - Icone de carregamento
 - Efeito de luz e Neon 
+- Perspectiva
