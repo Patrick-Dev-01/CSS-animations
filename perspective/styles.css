@@ -1,0 +1,68 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: auto;
+    align-self: center;
+    margin: 0 50px;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 70px;
+    perspective: 1000px;
+}
+
+ul li{
+    display: grid;
+    grid-template-columns: 20% auto;
+    border-radius: 10px;
+    margin-top: 105px;
+    padding: 15px;
+    cursor: pointer;
+    transform: rotateY(-30deg) rotateX(15deg);
+    position: absolute;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    mix-blend-mode: multiply;
+}
+
+ul li:nth-child(1){
+    background: #bfe8fc;
+    top: -165px;
+    z-index: 2;
+}
+
+ul li:nth-child(2){
+    background: #faffc8;
+    z-index: 1;
+}
+
+ul li:nth-child(3){
+    background: rgb(242, 228, 255);
+    top: 175px;
+}
+
+ul li:hover{
+    transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+    transition: transform .4s ease-out;
+    z-index: 3;
+    mix-blend-mode: normal;
+}
+
+img{
+    width: 70px;
+    margin-top: 20px;
+}
+
+#left > p{
+    color: rgb(73, 73, 73);
+    line-height: 1.5em;
+}
